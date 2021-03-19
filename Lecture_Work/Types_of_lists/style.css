@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+table tr th {
+    font-size: 1.3rem;
+    padding: 8px;
+    background-color: #00d2fbcc;
+}
+
+table tr th:hover {
+    background-color: #0064fbcc;
+    color: white;
+}
+
+table tr td {
+    font-size: 1.1rem;
+    background-color: #ace6f2;
+}
+
+table tr td:hover {
+    background-color: #e1f36b;
+}
+
+h3 {
+    background-color: #01beff;
+    text-align: center;
+    color: white;
+}

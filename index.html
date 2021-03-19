@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebProgramming HomePage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="head">
+        <h1>Web Programming</h1>
+    </header> 
+
+    <section class="main">
+        <div class="btns"> 
+            <button onclick="showLecturework()" id="lecturebtn">Lecture</button>
+            <button onclick="showPracticals()" id="practicalbtn">Practicals</button>
+        </div>
+
+        <div class="lists" id="lecture_work">
+            <table>
+                <tr>
+                    <th> No. </th>
+                    <th> Lecture Work </th>
+                    <th> Link </th>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> Create a webpage that display about all types of lists.</td>
+                    <td><a href="Lecture_Work/Types_of_lists/index.html" target="_blank" > View </a></td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td> Create a webpage that shows image map attribute of HTML. </td>
+                    <td><a href="Lecture_Work/Image_map/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 3 </td>
+                    <td> Create a webpage using Javascript that shows color changing of images. </td>
+                    <td><a href="Lecture_Work/Traffic_Light_JS/index.html" target="_blank"> View </a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="lists" id="Practicals">
+            <table>
+                <tr>
+                    <th> No. </th>
+                    <th> Practicals </th>
+                    <th> Link </th> </th>
+                </tr>
+                <tr>
+                    <td> 1_1 </td>
+                    <td> Design a simple form for online ticket booking system. </td>
+                    <td><a href="Practicals/Ticket_Booking/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 1_2 </td>
+                    <td>  Create a AIT registration form with header, menubar and footer. </td>
+                    <td><a href="Practicals/Registration_Form/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 1_3 </td>
+                    <td> Create a webpage that contain table of employee's details.</td>
+                    <td><a href="Practicals/Employee_Table/index.html" target="_blank" > View </a></td>
+                </tr>
+                <tr>
+                    <td> 2_1 </td>
+                    <td> Create a news site using margin , padding and positioning</td>
+                    <td><a href="Practicals/News_Site/index.html" target="_blank" > View </a></td>
+                </tr>
+                <tr>
+                    <td> 2_2 </td>
+                    <td> Design a webpage for understanding the concept of pseudo classes.</td>
+                    <td><a href="Practicals/Pseudo_classes/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 2_3 </td>
+                    <td> Design a webpage for table and understanding the concept of link.</td>
+                    <td><a href="Practicals/Hover_effects_link/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 3_1 </td>
+                    <td> Create a table using bootstrap.</td>
+                    <td><a href="Practicals/Bootstrap_Table/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 3_2 </td>
+                    <td> Create a lists using bootstrap</td>
+                    <td><a href="Practicals/Bootstrap_Lists/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 3_3 </td>
+                    <td> Create a buttons using bootstrap. </td>
+                    <td><a href="Practicals/Bootstrap_Buttons/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 4_1 </td>
+                    <td>  </td>
+                    <td><a href="#" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 4_2 </td>
+                    <td> </td>
+                    <td><a href="#" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 4_3 </td>
+                    <td>  </td>
+                    <td><a href="#" target="_blank"> View </a></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Designed By : Rutik Patel - 180020107049</h3>
+    </footer>
+
+
+    <script>
+        function showLecturework() {
+            document.getElementById("lecture_work").style.display = "block";
+            document.getElementById("Practicals").style.display = "none";
+            document.getElementById("lecturebtn").style.backgroundColor = "#0840a7";
+            document.getElementById("practicalbtn").style.backgroundColor = "#73c9ff";
+
+        }
+        function showPracticals() {
+            document.getElementById("Practicals").style.display = "block";
+            document.getElementById("lecture_work").style.display = "none";
+            document.getElementById("lecturebtn").style.backgroundColor = "#73c9ff";
+            document.getElementById("practicalbtn").style.backgroundColor = "#0840a7";
+        }
+        
+    </script>
+    
+</body>
+</html>

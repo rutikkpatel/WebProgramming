@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-image: url(../images/plane.jpg);
+} 
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 5px #fff8f8;
+}
+.main{
+    width: 69%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff45;
+    padding: 17px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12) , 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+#name, #email, #phone, #age, #city, #date{
+    width: 100%;
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+#date {
+    width: 40%;
+}
+#city {
+    width: 24%;
+    margin: 15px 0 22px 0;
+}
+.regbtn , .rstbtn {
+    background-color: #4c6fafc2;
+    color: white;
+    margin-top: 8px;
+    padding: 16px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.8;
+} 
+.regbtn:hover {
+    background-color: #50af4c;
+}
+.rstbtn:hover {
+    background-color: #fb4141;
+}

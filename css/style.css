@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head {
+    display: inline-block;
+    width: 100%;
+}
+.head h1{
+    background-color: #a9d4f1;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 2px #00ffe7;
+    letter-spacing: 1px;
+}
+.main {
+    padding-top: 10px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0px;
+}
+.btns button {
+    background-color: #73c9ff; 
+    border: none;
+    color: white;
+    width:27%;
+    padding: 11px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin: 0px 15px;
+}
+.btns button:hover{
+    opacity: 0.9;
+}
+#lecturebtn {
+    background-color: #0840a7;
+}
+.lists {
+    height: 65vh; 
+    overflow: auto;
+}
+.lists table {
+    width: 90%;
+    margin: 0% 5% 2% 5%;
+}
+.lists table tr th {
+    position: sticky;
+    top:0;
+    font-size: 1.6rem;
+    padding: 14px;
+    text-align: center;
+    background-color: #0840a7;
+    color: white;
+}
+.lists table tr td {
+    font-size: 1.3rem;
+    padding: 12px;
+    text-align: center;
+    background-color: #73c9ff61;
+}
+.lists table tr td a {
+    display: block;
+    color: #002bff;
+    text-decoration: none;
+    transition: 0.3s all linear;
+}
+.lists table tr td a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.lists table tr td a:visited{
+    color: rgb(248, 11, 236);
+}
+#Practicals {
+    display: none;
+}
+#lecture_work {
+    display: block;
+}
+footer h3{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #32cdcd6b;
+    text-align: center;
+    font-weight: bold;
+    padding: 6px 0px;
+    margin-top: 5px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Ticket Booking System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="main">
+            <h1>Flight Ticket Booking</h1>
+
+            <label for="name"><b> Name</b></label>
+            <input type="text" placeholder="Enter Your Name" name="name" id="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Your Email" name="email" id="email" required>
+
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="tel" placeholder="Enter Your Phone Number" name="phone" id="phone" maxlength="10" required>
+
+            <label for="age"><b>Age</b></label>
+            <input type="number" placeholder="Enter Your Age" name="age" id="age" maxlength="2" required>
+
+            <label for="route"><b>Route</b></label>
+            <input type="radio" id="oneway" name="route" value="One way">
+            <label for="oneway">One way</label>
+            <input type="radio" id="twoway" name="route" value="Two way">
+            <label for="twoway">Two way</label><br>
+
+            <label for="from"><b>From</b></label>
+            <select id="city" name="city">
+                <option>Ahmedabad</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+                <option>Goa</option>
+                <option>Hyderabad</option>
+                <option>Bengaluru</option>
+            </select>
+
+            <label for="To"><b>To </b></label>
+            <select id="city" name="city">
+                <option>Bengaluru</option>
+                <option>Hyderabad</option>
+                <option>Goa</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Ahmedabad</option>
+            </select>
+            <br>
+            <label for="date"><b>Date </b></label>
+            <input type="date" placeholder="dd/mm/yyyy" name="phone" id="date" required>
+            <br>
+            <button type="submit" class="regbtn">Submit</button>
+            <button type="reset" class="rstbtn">Reset</button>
+        </div>
+    </form>
+    <h4>180020107049 Rutik Patel</h3>
+</body>
+
+</html>
