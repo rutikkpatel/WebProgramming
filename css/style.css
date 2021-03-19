@@ -85,9 +85,10 @@
     display: block;
 }
 footer h3{
-    position: fixed;
+    /*For Fixed Footer*/
+   /* position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0;*/
     width: 100%;
     background-color: #32cdcd6b;
     text-align: center;
