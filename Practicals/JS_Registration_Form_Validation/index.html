@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h3>180020107049 Rutik Patel</h3>
+
+    <form method="GET" onsubmit="alert('Your Booking is Successful')">
+        <div class="main">
+            <h1>Flight Ticket Booking</h1>
+
+            <label for="name"><b> Name</b></label>
+            <input type="text" placeholder="Enter Your Name" name="name" id="name" pattern="[A-Za-z]+"
+                title="Only Alphabets allowed !!" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Your Email" name="email" id="email" required>
+
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="tel" placeholder="Enter Your Phone Number" name="phone" id="phone" pattern=".{10,10}"
+                title="Only 10 Digits allowed !!" required>
+
+            <label for="age"><b>Age</b></label>
+            <input type="number" placeholder="Enter Your Age" name="age" id="age" maxlength="2" required>
+
+            <label for="current_address"><b>Current Address</b></label>
+            <textarea name="current_address" id="current_address" cols="30" rows="5" placeholder="Enter Your Address"
+                required></textarea>
+            <br>
+
+            <input type="checkbox" name="address_checkbox" id="address_checkbox" onclick="check()">
+            <label for="address_checkbox"> Same as above </label>
+            <br><br>
+
+            <label for="permanent_address"><b>Permanant Address</b></label>
+            <textarea name="permanent_address" id="permanent_address" cols="30" rows="5"
+                placeholder="Enter Your Address" required></textarea>
+            <br>
+
+            <label for="route"><b>Route</b></label>
+            <input type="radio" id="oneway" name="route" value="One way">
+            <label for="oneway">One way</label>
+            <input type="radio" id="twoway" name="route" value="Two way">
+            <label for="twoway">Two way</label><br>
+
+            <label for="from"><b>From</b></label>
+            <select id="city" name="city">
+                <option>Ahmedabad</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+                <option>Goa</option>
+                <option>Hyderabad</option>
+                <option>Bengaluru</option>
+            </select>
+
+            <label for="To"><b>To </b></label>
+            <select id="city" name="city">
+                <option>Bengaluru</option>
+                <option>Hyderabad</option>
+                <option>Goa</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Ahmedabad</option>
+            </select>
+            <br>
+            <label for="date"><b>Date </b></label>
+            <input type="date" placeholder="dd/mm/yyyy" name="phone" id="date" required>
+            <br>
+            <button type="submit" class="regbtn">Submit</button>
+            <button type="reset" class="rstbtn">Reset</button>
+        </div>
+    </form>
+
+
+    <!-- SCRIPT -->
+    <script>
+        function check() {
+
+            var current_address = document.getElementById('current_address');
+            var permanent_address = document.getElementById('permanent_address');
+            var address_checkbox = document.getElementById('address_checkbox');
+
+            if (address_checkbox.checked == true) {
+                permanent_address.value = current_address.value;
+                permanent_address.disabled = true;
+            }
+            else {
+                permanent_address.disabled = false;
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>
