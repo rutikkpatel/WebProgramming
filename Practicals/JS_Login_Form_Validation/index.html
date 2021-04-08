@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bgimg">
+        <div class="center">
+            <img src="user_logo.png" alt="usericon" id="usericon">
+            <h2>LOGIN</h2>
+            <form action="" method="GET" onsubmit="alert('Login is Successful')">
+
+                <div>
+                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" pattern=".{10,10}"
+                    title="Only 10 Digits allowed !!" required>
+                </div>
+                <br>
+                <div>
+                    <input type="text" name="username" id="username" placeholder="Username" pattern="[a-zA-Z0-9]+" title="Username doesn't start with Special Characters" required>
+                </div>
+                <div id="validate_username">
+                    <p id="starting" class="valid_username">Should not start with _ , @ , numbers</p>
+                </div>
+                <br>
+                <div>
+                    <input type="password" name="pwd" id="pwd" placeholder="Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                        title="Password Must contain One Uppercase, One lowercase, One digit and minimum 6 Characters"
+                        required>
+                </div>
+                <div id="validate_pwd">
+                    <p id="num" class="invalid">!! Must have numbers (0-9) !!</p>
+                    <p id="capital" class="invalid">!! Must have uppercase letter (A-Z) !!</p>
+                    <p id="lower" class="invalid">!! Must have lowercase letter (a-z) !!</p>
+                    <p id="length" class="invalid">!! Must have minimum 6 to 12 characters !!</p>
+                </div>
+                <br>
+                <div>
+                    <button type="submit"> Login</button>
+                </div>
+            </form>
+        </div>
+        <h3>Designed By :- 180020107049 Rutik Patel</h3>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
