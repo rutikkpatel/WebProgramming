@@ -1,0 +1,96 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bgimg{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(27deg, #ebec99 50% , #f18282 50%);
+}
+
+.center{
+    width: 350px;
+    height: 411px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(27deg, #f18282 50% , #ebec99 50%);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12) , 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+#usericon{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -62px;
+    left: calc((335px - 120px)/2);
+}
+
+h2{
+    text-align: center;
+    font-size: 1.6rem;
+    word-spacing: 10px;
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+
+#phone, #username, #pwd{
+    width: calc(100% - 40px);
+    height: 30px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: 0px;
+    padding: 0 10px;
+}
+::placeholder{
+    letter-spacing: 2px;
+    color: black;
+}
+
+#phone:hover, #username:hover, #pwd:hover{
+    border: 1px solid red;
+}
+
+button{
+    width: calc(100% - 40px);
+    height: 30px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: 0px;
+    background-color: chartreuse;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.68) , 2px 2px 4px rgba(0, 0, 0, 0.68);
+}
+
+#validate_pwd, #validate_username {
+    display: none;
+    padding: 5px;
+    padding-left: 9%;
+}
+.valid, .valid_username, .invalid, .invalid_username {
+    color: #2700ff;
+    text-shadow: 0px 1px 0px black;
+}
+.valid, .valid_username {
+    display: none;
+}
+
+h3{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f182e645;
+    text-align: center;
+    padding: 6px 0px;
+}
+
