@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Font Size Animation Generator</title>
+    <style>
+        body {
+            background-image: linear-gradient(90deg, #ec4438, #f3a183);
+            overflow: hidden;
+        }
+
+        p {
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h3 {
+            color: white;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f4433694;
+            text-align: center;
+            font-weight: bold;
+            padding: 6px 0px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+<h1 style="text-align:center;">Font Size Animation Using JavaScript</h1>
+    <p id="fontsize_increase"></p>
+    <script>
+        var var1 = setInterval(inTimer, 500);
+        var fontsize = 5;
+        var x = document.getElementById("fontsize_increase");
+        function inTimer() {
+            x.innerHTML = 'AHMEDABAD INSTITUTE OF TECHNOLOGY';
+            x.setAttribute('style', "font-size: " + fontsize + "px; color: blue");
+            fontsize += 5;
+            if (fontsize >= 50) {
+                clearInterval(var1);
+                var2 = setInterval(deTimer, 500);
+            }
+        }
+
+
+    </script>
+
+    <h3>Designed By : Rutik Patel - 180020107049</h3>
+</body>
+
+</html>
