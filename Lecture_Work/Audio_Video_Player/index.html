@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>MEDIA PLAYER</h1>
+    <div class="main">
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td>INTERNAL</td>
+                    <td>YOUTUBE</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <video id="myvideo" width="560" height="315" controls>
+                            <source src="videotemplate.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                    <td>
+                        <iframe id="ytvideo" width="560" height="315" src="https://www.youtube.com/embed/OsUwBPd1F3s"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button onclick="playPause()">Play/Pause</button>
+                    </td>
+                    <td>
+                        AUDIO 
+                        <audio controls>
+                            <source src="Jack_bgm.mp3" type="audio/mpeg">
+                          </audio>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h3>Designed By :- Rutik Patel 180020107049</h3>
+
+    <script>
+        var myVideo = document.getElementById("myvideo");
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+    </script>
+</body>
+
+</html>
