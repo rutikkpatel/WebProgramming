@@ -43,7 +43,7 @@
     background-color: #0840a7;
 }
 .lists {
-    height: 65vh; 
+    height: 60vh; 
     overflow: auto;
 }
 .lists table {
