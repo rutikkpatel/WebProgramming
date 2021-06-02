@@ -28,7 +28,14 @@
 
 </head>
 
-<body>
+<body onload="mypreloadfun()">
+    
+    <!-- Preloader Start -->
+
+    <div id="preloader"></div>
+
+    <!-- Preloader End -->
+    
     <header class="head">
         <h1>Web Programming</h1>
     </header>
@@ -221,12 +228,14 @@
 
     <!-- Script Here  -->
     <script>
+        function mypreloadfun(){
+            document.getElementById("preloader").style.display = "none";
+        }
         function showLecturework() {
             document.getElementById("lecture_work").style.display = "block";
             document.getElementById("Practicals").style.display = "none";
             document.getElementById("lecturebtn").style.backgroundColor = "#0840a7";
             document.getElementById("practicalbtn").style.backgroundColor = "#73c9ff";
-
         }
         function showPracticals() {
             document.getElementById("Practicals").style.display = "block";
