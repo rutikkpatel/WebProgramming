@@ -36,5 +36,5 @@
                     document.querySelector("h1").innerHTML
                         = (" Winner is : " +player1);
                 }
-            }, 2500);
+            }, 500);
         }
